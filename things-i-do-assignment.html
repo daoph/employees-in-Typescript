@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang:"en">
+
+<head>
+<title>Things I Like To Do</title>
+<style>
+</style>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" type=text/javascript></script>
+<script src = "things-i-do-assignment.js" type = "text/javascript"></script>
+</head>
+<body onload="ready()">
+<h1 style="text-align: center">Things I Like To Do</h1>
+
+<div class="form-group row" style="margin: 0px 10px">
+  	<div class="col-xs-1">
+		<input id="orderCtrl" class="form-control" 
+		type="text" name="order" placeholder="order">
+	</div>
+	<div class="col-xs-7">
+		<input id="descCtrl" class="form-control" 
+		type="text" name="order" placeholder="description">
+	</div>
+	<div class="col-xs-2">
+		<input id="freqCtrl" class="form-control" 
+		type="text" name="order" placeholder="frequency">
+	</div>
+	<div class="col-xs-1">
+		<input id="spendCtrl" class="form-control" 
+		type="text" name="order" placeholder="spend">
+	</div>
+	<div class="col-xs-1">
+		<button class="btn btn-primary" onclick="addThing()">Add</button>
+	</div>
+</div>
+
+<div style="margin: 0px 10px">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+			<th>Order</th>
+			<th>Description</th>
+			<th>Frequency</th>
+			<th>Cost</th>
+			</tr>
+		</thead>
+			<tbody id='thingTable'>
+			</tbody>
+	</table>
+</div>
+
+
+
+</body>
+
+
+</html>	
